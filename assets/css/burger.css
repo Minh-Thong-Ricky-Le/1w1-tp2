@@ -1,0 +1,48 @@
+
+#chk-burger {
+    display: none;
+}
+
+
+.menu {
+    display: block;
+    position: fixed;
+    top: 70px;
+    right: 20px; 
+    padding: 10px;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+
+    transform: translateX(110%);
+    transition: transform 1s;
+}
+
+
+.menu__burger {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    padding: 5px;
+    margin: 10px;
+    background: linear-gradient(to left, white, black);
+    border-radius: 8px;
+}
+
+.menu a:hover {
+    background: linear-gradient(to left, black, white);
+}
+
+
+#chk-burger:checked ~ .menu {
+    transform: translateX(0);
+}

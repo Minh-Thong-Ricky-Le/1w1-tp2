@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.global {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+  height: 100vh;
+  background-image: url("../image/img-1.jpg");
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 80% 50%;
+}
+
+.global__text{
+  background-color: rgba(120, 45, 45, 0.445);
+  width: 500px;
+  height: 100%;  
+  line-height: 80px;
+  color: white;
+}
+
+.global__text h1{
+  padding: 4%;
+  text-shadow: 4px 3px 5px black;
+  font-size: 70px;
+}
+.global__text h2{
+  padding: 3%;
+  font-size: 40px;
+}
+.global__text p{
+  padding: 3%;
+  line-height: 2rem;
+
+}
+.global__text img{
+  margin: 5px;
+}
+.global__adresse{
+ padding: 3%;
+ 
+}
+.global__icons{
+  padding: 3%;
+}
+.global__text li{
+padding:0 3%;
+margin :0 2px;
+height: 20px;
+list-style: none;
+}
+
+.menu__a:link{
+    color: #e3e5eb;
+    padding: 3px 5px;
+    font-size: 2rem;
+    background-color: rgb(84, 128, 194);
+}
+.menu__a:visited{
+    color: #cfd5db;
+    background-color: rgb(51, 85, 160);
+}
+.menu__a:hover{
+    color: yellow;
+    background-color: slateblue;
+}
+.menu__a:active{
+    color: rgb(86, 180, 114);
+    background-color: tomato;
+}
+
+
+
+section{
+    min-height: 100vh;
+}
+.centre{
+    max-width: 1100px;
+    margin: 0 auto;      
+    padding: 40px 20px;  
+}
+img{
+
+}
+section h1 {
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+}
+section h2 {
+    margin: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+p, label, input {
+    font-family: 'Roboto', sans-serif;
+}
+.accueil{
+    margin: 0;
+}
+
+.un{
+    background-color: rgb(61, 60, 59);
+    margin: 0;
+    height: 100vh;
+}
+.deux{
+    background-color: rgb(179, 138, 89);
+    margin: 0;
+}
+.trois{
+    background-color: rgb(29, 30, 105);
+    margin: 0;
+}
+.quatre{
+    background-color: rgb(150, 60, 54);
+    margin: 0;
+}
+.cinq{
+    background-color: rgb(126, 37, 104);
+    margin: 0;
+}
+.formulaire{
+    background-color: rgb(130, 175, 175);
+    margin: 0;
+}
+.bouton__inscription {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px;
+    background-color: rgb(84, 128, 194);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.bouton__inscription:hover {
+    background-color: rgb(51, 85, 160);
+}
+.tableau-persona {
+    width: 90%;      
+    margin: 40px auto;
+    border-collapse: collapse;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1.3rem;
+}
+
+.tableau-persona th,
+.tableau-persona td {
+    border: 2px solid white;
+    padding: 12px 16px;
+}
+
+.tableau-persona th {
+    background: rgba(255, 0, 0, 0.5);
+    font-weight: bold;
+}
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background-color: #111;
+    color: white;
+    flex-wrap: wrap;
+}
+.footer__col h3 {
+    margin-bottom: 10px;
+}
+.footer__col ul {
+    list-style: none;
+    padding: 0;
+}
+.footer__col a {
+    color: white;
+    text-decoration: none;
+}
