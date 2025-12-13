@@ -1,6 +1,35 @@
-.video{
 
+.video{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+ 
+  margin: 0;
+  padding: 0;
 }
+
+
 .video__figure{
-    display: inline-block;
+  display: flex;
+  width: 100%;
+  margin: 0;    
+  padding: 0;
+}
+
+
+.video__figure:nth-child(odd){
+  justify-content: flex-start; 
+}
+.video__figure:nth-child(even){
+  justify-content: flex-end;   
+}
+
+
+.video__figure iframe{
+  width: 560px;
+  height: 315px;
+  max-width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
 }
