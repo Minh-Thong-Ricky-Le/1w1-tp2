@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="assets/css/article.css">
         <link rel="stylesheet" href="assets/css/galerie.css">
         <link rel="stylesheet" href="assets/css/video.css">
+        <link rel="stylesheet" href="assets/css/recherche.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto:wght@300;400;700&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -19,10 +20,61 @@
         <section class="global__text">
             
     <h1>Bienvenue à Persona 5 Royal</h1>
-    <h2>Appuyez X pour commencer</h2>
-    <h2>Auteur : Ricky Le</h2>
+    <form class="recherche">
+            <input
+              class="recherche__input"
+              placeholder="Rechercher"
+              type="search"
+            />
+            <img
+              class="recherche__img"
+              src="https://s2.svgbox.net/hero-outline.svg?ic=search&color=000"
+              width="20"
+              height="20"
+              alt="recherche"
+            />
+          </form>
+    <h2>Auteur : Ricky Le - 1w1 - Mise en page Web </h2>
+    <h3> Techniques d'intégration multimédia </h3>
+    <h3> Collège de Maisonneuve - Automne 2025</h3>
     <p>Shin Megami Tensei: Persona 5 est un jeu vidéo de rôle développé par P Studio et édité par Atlus au Japon et par Deep Silver aux États-Unis et en Europe. Il est sorti sur PlayStation 3 et PlayStation 4 en septembre 2016 au Japon et en avril 2017 en Amérique du Nord et en Europe. C'est chronologiquement le sixième opus de la série Persona. Une version améliorée intitulée Persona 5 Royal est sortie par la suite. Cette version, éditée par Sega en Occident, comprenant quelques ajouts supplémentaires au titre d'origine, dont une localisation en français, motivée par le succès de Judgment en Occident, est disponible sur PlayStation 4 le 31 octobre 2019 au Japon et le 31 mars 2020 aux États-Unis et en Europe. Persona 5 Royal sort ensuite sur Xbox One, Xbox Series, Windows, PlayStation 5 et Nintendo Switch le 21 octobre 2022.</p> 
-    <a href="#formulaire" class="bouton__inscription">Inscription</a>
+        <a href="#formulaire" class="bouton__inscription">Inscription</a>
+            <figure class="entete__sociaux">
+                <a href="https://github.com/Minh-Thong-Ricky-Le/1w1-tp2?tab=readme-ov-file">
+                <img
+                    src="https://s2.svgbox.net/social.svg?ic=github&color=000000"width="25"height="25"alt="github"/>
+                </a>
+                <img
+                    src="https://s2.svgbox.net/social.svg?ic=facebook&color=00f"
+                    width="25"
+                    height="25"
+                    alt="facebook"
+                />
+                <img
+                    src="https://s2.svgbox.net/social.svg?ic=stackoverflow&color=a00"
+                    width="25"
+                    height="25"
+                    alt="stackoverflow"
+                />
+                <img
+                    src="https://s2.svgbox.net/social.svg?ic=linkedin&color=0960da"
+                    width="25"
+                    height="16"
+                    alt="linkedin"
+                />
+                <img
+                    src="https://s2.svgbox.net/social.svg?ic=messenger&color=00f"
+                    width="25"
+                    height="25"
+                    alt="messenger"
+                />
+                <img
+                    src="https://s2.svgbox.net/social.svg?ic=discord&color=3609da"
+                    width="25"
+                    height="25"
+                    alt="discord"
+                />
+            </figure>
         </section>
     </section>
 
@@ -351,8 +403,6 @@
         </section>
     </section>
     
-    <section class="cinq" id="cinq"><h1>CINQ</h1></section>
-    
     <div class="navigation">
         <label for="chk-burger" 
         class="menu__burger">
@@ -366,7 +416,6 @@
             <a href="#deux" class="menu__a"> LES PERSONNAGES</a>
             <a href="#trois" class="menu__a">VIDEO</a>
             <a href="#quatre" class="menu__a">LES PERSONAS</a>
-            <a href="#cinq" class="menu__a">CINQ</a>
             <a href="#formulaire" class="menu__a">Formulaire</a>   
         </nav>
     </div>
@@ -399,25 +448,50 @@
         <input class="formulaire__submit" type="submit" value="Valider l'inscription">
         </section>
 <footer class="footer">
+  <div class="footer__container">
+
     <div class="footer__col">
-        <h3>Navigation</h3>
-        <ul>
-            <li><a href="#accueil">Accueil</a></li>
-            <li><a href="#formulaire">Inscription</a></li>
-        </ul>
+      <h3>Collège de Maisonneuve</h3>
+      <p>3800 rue Sherbrooke Est<br>Montréal, QC, H1X 2A2</p>
+
+      <p class="footer__desc">
+        Site réalisé dans le cours de Mise en page Web.<br>
+        Thème : Persona 5 Royal.
+        Image et Vidéo utiliser de Pinterest et Youtube.
+      </p>
     </div>
 
     <div class="footer__col">
-        <h3>Contact</h3>
-        <p>Email : persona5@atlus.com</p>
-        <p>Téléphone : 514-555-7777</p>
+      <h3>Liens importants</h3>
+      <ul class="footer__list">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#formulaire">Inscription</a></li>
+        <li><a href="#deux">Articles</a></li>
+        <li><a href="#trois">Vidéos</a></li>
+        <li><a href="#quatre">Persona</a></li>
+      </ul>
     </div>
 
     <div class="footer__col">
-        <h3>Suivez-nous</h3>
-        <p>Instagram</p>
-        <p>Twitter</p>
+      <h3>Réseaux sociaux</h3>
+      <div class="footer__sociaux">
+          <img src="https://s2.svgbox.net/social.svg?ic=instagram&color=white" alt="Instagram">
+          <img src="https://s2.svgbox.net/social.svg?ic=facebook&color=white" alt="Facebook">
+          <img src="https://s2.svgbox.net/social.svg?ic=twitter&color=white" alt="Twitter">
+          <img src="https://s2.svgbox.net/social.svg?ic=github&color=white" alt="Github">
+      </div>
     </div>
+    
+
+  </div>
+
+  <div class="footer__bottom">
+    <p>
+      © 2025 - Persona 5 Royal |
+      <a>Avis de confidentialité | Privacy Notice</a> |
+      <a href="#accueil">Retour à l'accueil</a>
+    </p>
+  </div>
 </footer>
 </body>
 </html>

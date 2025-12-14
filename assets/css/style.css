@@ -1,12 +1,21 @@
 *{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
 }
+/* ------------------------------------------------------------------ palette de couleur */
+:root {
+  --p5-noir: #0b0b0b;
+  --p5-rouge: #c7001e;
+  --p5-blanc: #f5f5f5;
+  --p5-gris-fonce: #1e1e1e;
+  --p5-gris-clair: #b3b3b3;
+}
+/* ------------------------------------------------------------------ global */
 .global {
   box-sizing: border-box;
   margin: 0;
@@ -24,17 +33,26 @@ body {
   width: 500px;
   height: 100%;  
   line-height: 80px;
+  margin-left: 0;
+  padding-left: 40px;   
+  padding-right: 40px;
   color: white;
 }
 
 .global__text h1{
   padding: 4%;
   text-shadow: 4px 3px 5px black;
-  font-size: 70px;
+  font-size: 60px;
 }
 .global__text h2{
   padding: 3%;
-  font-size: 40px;
+  font-size: 30px;
+  text-shadow: 4px 3px 5px black;
+}
+.global__text h3{
+  padding: 3%;
+  font-size: 15px;
+  text-shadow: 4px 3px 5px black;
 }
 .global__text p{
   padding: 3%;
@@ -57,134 +75,281 @@ margin :0 2px;
 height: 20px;
 list-style: none;
 }
+/* ------------------------------------------------------------------ accueil / bouton */
+#accueil {
+  position: relative;
+  min-height: 100vh; 
+  background-color: var(--p5-noir);
+  color: var(--p5-blanc);
+}
+.accueil{
+  margin: 0;
+}
+#accueil .bouton__inscription {
+  position: absolute;
+  bottom: 40px;      
+  left: 50%;
+  background-color: var(--p5-rouge);
+  color: #fff;
+}
+.bouton__inscription:hover {
+  background-color: #ff0026;
+}
+#accueil h1 {
+  color: var(--p5-rouge);
+}
 
+#accueil h2,
+#accueil h3 {
+  color: var(--p5-blanc);
+}
+
+#accueil p {
+  color: var(--p5-gris-clair);
+}
+/* ------------------------------------------------------------------ entete */
+.entete__sociaux {
+  display: flex;
+  gap: 14px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+
+.entete__sociaux a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.entete__sociaux img {
+  width: 26px;
+  height: 26px;
+  transition: 
+  transform 0.25s ease,
+  filter 0.25s ease,
+  opacity 0.25s ease;
+  opacity: 0.85;
+}
+
+
+.entete__sociaux a:hover img {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 6px rgba(0,0,0,0.4));
+  opacity: 1;
+}
+
+
+.global__text .entete__sociaux {
+  justify-content: flex-start; 
+}
+/* ------------------------------------------------------------------ menu */
 .menu__a:link{
-    color: #e3e5eb;
-    padding: 3px 5px;
-    font-size: 2rem;
-    background-color: rgb(84, 128, 194);
+   color: #fff;
+  padding: 3px 5px;
+  font-size: 2rem;
+  background-color: rgb(84, 128, 194);
 }
 .menu__a:visited{
-    color: #cfd5db;
-    background-color: rgb(51, 85, 160);
+  color: #cfd5db;
+  background-color: rgb(51, 85, 160);
 }
 .menu__a:hover{
-    color: yellow;
-    background-color: slateblue;
+  color: var(--p5-rouge);
+  background-color: slateblue;
 }
 .menu__a:active{
-    color: rgb(86, 180, 114);
-    background-color: tomato;
+  color: rgb(86, 180, 114);
+  background-color: tomato;
 }
-
+/* ------------------------------------------------------------------ centre / section / h1,h2,h3 / p / label / input */
+.centre{
+  max-width: 1100px;
+  margin: 0 auto;      
+  padding: 40px 20px;  
+}
 
 
 section{
-    min-height: 100vh;
-}
-.centre{
-    max-width: 1100px;
-    margin: 0 auto;      
-    padding: 40px 20px;  
-}
-img{
-
+  min-height: 100vh;
 }
 section h1 {
-    margin: 0;
-    padding-top: 20px;
-    text-align: center;
+  margin: 0;
+  padding-top: 20px;
+  text-align: center;
 }
 section h2 {
-    margin: 0;
-    text-align: center;
-    margin-top: 20px;
+  margin: 0;
+  text-align: center;
+  margin-top: 20px;
 }
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
+h1, h2, h3 {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 p, label, input {
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
-.accueil{
-    margin: 0;
-}
-
+/* ------------------------------------------------------------------ un,deux,trois,quatre,formulaire */
 .un{
-    background-color: rgb(61, 60, 59);
-    margin: 0;
-    height: 100vh;
+  background-color: #111;
+  color: var(--p5-blanc);
+  margin: 0;
+  height: 100vh;
 }
 .deux{
-    background-color: rgb(179, 138, 89);
-    margin: 0;
+  background-color: #0f0f0f;
+  color: var(--p5-blanc);
+  margin: 0;
 }
 .trois{
-    background-color: rgb(29, 30, 105);
-    margin: 0;
+  background-color: #000;
+  color: var(--p5-blanc);
+  margin: 0;
+}
+#trois h1 {
+  color: var(--p5-rouge);
 }
 .quatre{
-    background-color: rgb(150, 60, 54);
-    margin: 0;
-}
-.cinq{
-    background-color: rgb(126, 37, 104);
-    margin: 0;
+  background-color: #111;
+  color: var(--p5-blanc);
+  margin: 0;
 }
 .formulaire{
-    background-color: rgb(130, 175, 175);
-    margin: 0;
+  background-color: #0f0f0f;
+  color: var(--p5-blanc);
+  margin: 0;
 }
+/* ------------------------------------------------------------------ bouton */
 .bouton__inscription {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 20px;
-    background-color: rgb(84, 128, 194);
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 20px;
+  background-color: rgb(84, 128, 194);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
 }
 .bouton__inscription:hover {
     background-color: rgb(51, 85, 160);
 }
+/* ------------------------------------------------------------------ tableau */
 .tableau-persona {
-    width: 90%;      
-    margin: 40px auto;
-    border-collapse: collapse;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
-    font-size: 1.3rem;
+  width: 90%;      
+  margin: 40px auto;
+  border-collapse: collapse;
+  text-align: center;
+  background-color: var(--p5-gris-fonce);
+  color: var(--p5-blanc);
+  font-size: 1.3rem;
 }
 
 .tableau-persona th,
 .tableau-persona td {
-    border: 2px solid white;
-    padding: 12px 16px;
+  border: 2px solid white;
+  padding: 12px 16px;
 }
 
 .tableau-persona th {
-    background: rgba(255, 0, 0, 0.5);
-    font-weight: bold;
+  background-color: var(--p5-rouge);
+  color: #fff;
+  font-weight: bold;
 }
-.footer {
-    display: flex;
-    justify-content: space-around;
-    padding: 40px;
-    background-color: #111;
-    color: white;
-    flex-wrap: wrap;
+.tableau-persona td{
+  border-color: #333;
 }
-.footer__col h3 {
-    margin-bottom: 10px;
+.tableau-persona tr:nth-child(even) {
+  background-color: #181818;
 }
-.footer__col ul {
-    list-style: none;
-    padding: 0;
+/* ------------------------------------------------------------------ footer */
+.footer{
+  background-color: var(--p5-noir);
+  color: var(--p5-gris-clair);
+  padding:40px 20px 18px;
+  font-family:Poppins, sans-serif;
 }
-.footer__col a {
-    color: white;
-    text-decoration: none;
+.footer h3 {
+  color: #fff;
+}
+.footer a {
+  color: var(--p5-gris-clair);
+}
+.footer__container{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:30px;
+  flex-wrap:wrap;
+  max-width:1200px;
+  margin:0 auto;
+}
+
+.footer__col{
+  flex:1;
+  min-width:220px;
+}
+
+.footer__col h3{
+  margin:0 0 10px;
+  font-size:1.1rem;
+}
+
+.footer__desc{
+  margin-top:12px;
+  color:#cfcfcf;
+  font-size:.95rem;
+  line-height:1.4;
+}
+
+.footer__list{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+.footer__list li{
+  margin:0 0 8px;
+}
+
+.footer__list a,
+.footer__bottom a{
+  color:#cfcfcf;
+  text-decoration:none;
+}
+
+.footer__list a:hover,
+.footer__bottom a:hover{
+  color: var(--p5-rouge);
+  text-decoration:underline;
+}
+
+.footer__sociaux{
+  display:flex;
+  gap:12px;
+  margin-top:10px;
+}
+
+.footer__sociaux img{
+  width:26px;
+  height:26px;
+  display:block;
+  transition:transform .2s ease, opacity .2s ease;
+  opacity:.9;
+  filter: invert(1);
+}
+
+.footer__sociaux a:hover img{
+  transform:scale(1.08);
+  opacity:1;
+}
+
+.footer__bottom{
+  margin-top:26px;
+  padding-top:12px;
+  border-top:1px solid #2b2b2b;
+  text-align:center;
+  font-size:.9rem;
+  color:#cfcfcf;
 }

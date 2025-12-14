@@ -2,8 +2,6 @@
 #chk-burger {
     display: none;
 }
-
-
 .menu {
     display: block;
     position: fixed;
@@ -13,20 +11,17 @@
     width: 250px;
     background-color: rgba(0, 0, 0, 0.15);
     border-radius: 8px;
+    color: var(--p5-rouge);
 
     transform: translateX(110%);
     transition: transform 1s;
 }
-
-
 .menu__burger {
     position: fixed;
     top: 20px;
     right: 20px;
     cursor: pointer;
 }
-
-
 .menu a {
     display: block;
     text-decoration: none;
@@ -37,12 +32,12 @@
     background: linear-gradient(to left, white, black);
     border-radius: 8px;
 }
-
 .menu a:hover {
     background: linear-gradient(to left, black, white);
 }
-
-
 #chk-burger:checked ~ .menu {
     transform: translateX(0);
+}
+.menu__burger img {
+  filter: invert(1);
 }

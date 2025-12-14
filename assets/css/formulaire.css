@@ -3,7 +3,8 @@
     flex-direction: column;
     justify-content: center;   
     align-items: center;       
-    background-color: rgb(130, 175, 175); 
+    background-color: #0f0f0f;
+    color: var(--p5-blanc); 
     padding: 40px 0;
 }
 
@@ -27,6 +28,9 @@
     border: none;
     width: 100%;
     margin-bottom: 10px;
+    background-color: var(--p5-gris-fonce);
+    color: #fff;
+    border: 1px solid #333;
 }
 
 .formulaire__rad {
@@ -38,11 +42,14 @@
     margin-top: 20px;
     padding: 10px 20px;
     border: none;
-    background-color: rgb(84, 128, 194);
-    color: white;
+    background-color: var(--p5-rouge);
+    color: #fff;
     font-weight: bold;
 }
 
 .formulaire__submit:hover {
-    background-color: rgb(51, 85, 160);
+    background-color: #ff0026;
+}
+.formulaire__input:focus {
+  border-color: var(--p5-rouge);
 }

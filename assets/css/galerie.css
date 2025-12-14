@@ -4,15 +4,13 @@
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   gap: 1.5rem;
 }
-
 .galerie__figure {
   position: relative;
   overflow: hidden;
   border-radius: 16px;
   background: #000;
+  background-color: var(--p5-gris-fonce);
 }
-
-
 .galerie__img {
   width: 100%;
   height: 525px;
@@ -22,8 +20,6 @@
   filter: grayscale(70%);
   transition: transform 250ms ease, filter 250ms ease;
 }
-
-
 .galerie__caption {
   position: absolute;
   top: 0;
@@ -33,7 +29,7 @@
   padding: 0.75rem 1rem;
 
   background: rgba(0, 0, 0, 0.219);
-  color: rgb(197, 58, 70);
+  color: #fff;
 
   font-weight: 600;
   letter-spacing: 0.05em;
@@ -42,9 +38,8 @@
 
   z-index: 2;
 }
-
-
 .galerie__figure:hover .galerie__img {
   filter: grayscale(0%);
   transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(199, 0, 30, 0.6);
 }
