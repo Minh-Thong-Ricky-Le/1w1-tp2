@@ -1,6 +1,6 @@
 .recette{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 4rem;
     padding: 3rem 1rem;
     border-bottom: 4px dotted grey;
@@ -17,28 +17,38 @@
 }
 
 .recette__div {
-    flex: 1 1 300px;
+    flex: 1 0 300px;
     font-family: "Montserrat", sans-serif;
     color: black;
     padding: 10px;
     gap: 20px;
+    order: 3;
+}
+.recette__div.recette:nth-of-type(2){
+    order: 2;
 }
 
 .recette__image {
-    flex: 1 1 300px;
+    flex: 1 0 300px;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
 }
-.recette__figure{}
-
+.recette__figure{
+    transform: rotate(5deg);
+}.recette__figure.recette:nth-of-type(2){
+    transform: rotate(-5deg);
+}
 .recette__figcaption{
     text-align: center;
     margin-top: 0.5rem;
     font-weight: 600;
     background-color: #88888836;
+    order: 1;
+    justify-content: flex-start;
 }
-
+.recette__figcaption.recette:nth-of-type(2){
+    order: 2;
+    justify-content: flex-end;
+}
 .recette__img {
     width: 100%;
     object-fit: cover;
@@ -60,40 +70,19 @@
     border: 3px solid #888;
     transition: transform 0.4s ease;
 }
-.recette:nth-of-type(even) .recette__image {
+.recette:nth-of-type(even) .recette__figure {
     order: 1;
-    justify-content: flex-end;
-    
 }
 
-.recette:nth-of-type(odd) .recette__image {
+.recette:nth-of-type(odd) .recette__figure {
     order: 2;
-    justify-content: flex-start;
-}
-
-.recette:nth-of-type(even) .recette__img {
-    transform: rotate(5deg);
-}
-
-.recette:nth-of-type(odd) .recette__img {
-    transform: rotate(-5deg);
 }
 .recette:nth-of-type(even) .recette__figcaption {
-    order: 1;
-    justify-content: flex-start;
+    transform: rotate(0deg);
 }
 
 .recette:nth-of-type(odd) .recette__figcaption {
-    order: 2;
-    justify-content: flex-end;
-}
-
-.recette:nth-of-type(even) .recette__figcaption {
-    transform: rotate(5deg);
-}
-
-.recette:nth-of-type(odd) .recette__figcaption {
-    transform: rotate(-5deg);
+    transform: rotate(0deg);
 }
 .recette, h2, h3, ol{
     text-align: left;
