@@ -1,0 +1,105 @@
+.recette{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 3rem 1rem;
+    border-bottom: 4px dotted grey;
+}
+.recette, h1{
+    font-family: "Dynapuff", sans-serif;
+    color: black;
+    text-align: center;
+}
+.recette, li{
+    list-style-type: none;
+    padding: 6px;
+}
+
+.recette__div {
+    flex: 1 1 300px;
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    padding: 10px;
+    gap: 20px;
+}
+
+.recette__image {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.recette__figure{}
+
+.recette__figcaption{
+    text-align: center;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    background-color: #88888836;
+}
+
+.recette__img {
+    width: 100%;
+    object-fit: cover;
+    align-items: flex-start;
+    justify-content: left;
+    width: 350px;
+    border: 3px solid grey;
+    border-radius: 6px;
+}
+.recette__div:nth-child(2) {
+    flex-basis: 100%;
+}
+.recette__img:hover {
+    transform: rotate(0deg) scale(1.05);
+}
+
+.recette__img {
+    width: 350px;
+    border: 3px solid #888;
+    transition: transform 0.4s ease;
+}
+.recette:nth-of-type(even) .recette__image {
+    order: 1;
+    justify-content: flex-end;
+    
+}
+
+.recette:nth-of-type(odd) .recette__image {
+    order: 2;
+    justify-content: flex-start;
+}
+
+.recette:nth-of-type(even) .recette__img {
+    transform: rotate(5deg);
+}
+
+.recette:nth-of-type(odd) .recette__img {
+    transform: rotate(-5deg);
+}
+.recette:nth-of-type(even) .recette__figcaption {
+    order: 1;
+    justify-content: flex-start;
+}
+
+.recette:nth-of-type(odd) .recette__figcaption {
+    order: 2;
+    justify-content: flex-end;
+}
+
+.recette:nth-of-type(even) .recette__figcaption {
+    transform: rotate(5deg);
+}
+
+.recette:nth-of-type(odd) .recette__figcaption {
+    transform: rotate(-5deg);
+}
+.recette, h2, h3, ol{
+    text-align: left;
+}
+.home{
+    position: fixed;
+    color: blue;
+    align-items: end;
+    justify-content: right;
+}

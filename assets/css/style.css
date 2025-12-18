@@ -216,6 +216,9 @@ p, label, input {
   color: var(--p5-blanc);
   margin: 0;
 }
+.cinq{
+ background-color: #f8e6a9;
+}
 .formulaire{
   background-color: #0f0f0f;
   color: var(--p5-blanc);
@@ -268,7 +271,7 @@ p, label, input {
   background-color: var(--p5-noir);
   color: var(--p5-gris-clair);
   padding:40px 20px 18px;
-  font-family:Poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 .footer h3 {
   color: #fff;
