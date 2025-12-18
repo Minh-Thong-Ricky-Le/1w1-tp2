@@ -4,6 +4,7 @@
     gap: 4rem;
     padding: 3rem 1rem;
     border-bottom: 4px dotted grey;
+    background-color: #f8e6a9;
 }
 .recette, h1{
     font-family: "Dynapuff", sans-serif;
